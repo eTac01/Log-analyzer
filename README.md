@@ -6,16 +6,13 @@ Name: CHUDARAJ KUSHWAHA
 
 <img width="1920" height="1013" alt="image" src="https://github.com/user-attachments/assets/ccb0f831-ff4b-41f4-87b4-38beb93248ad" />
 
-
-```
+###
 Log File Analyzer for Intrusion Detection Report
 1. Introduction
 Modern digital infrastructures continuously generate log data from multiple sources such as web servers, authentication services, and system daemons. These logs contain valuable information about user activities, system behavior, and potential security threats. As cyberattacks such as brute-force attempts, port scanning, and denial-of-service (DoS) attacks continue to rise, organizations require efficient mechanisms to analyze logs and detect suspicious behavior in real time.
 This project aims to design and develop a Log File Analyzer for Intrusion Detection using Python, Regular Expressions (regex), Pandas, and Matplotlib. The tool focuses on parsing logs, identifying attack patterns, visualizing traffic trends, and generating detailed incident reports. The analyzer is intended to support security teams in early threat detection and response.
 
-```
-```
-2. Objectives
+### 2. Objectives
 The primary objective of this project is to build an automated system capable of detecting suspicious log patterns across different log types. The tool is designed to:
     1. Parse Apache, SSH, and system logs efficiently.
     2. Identify common attack patterns, including:
@@ -24,9 +21,8 @@ The primary objective of this project is to build an automated system capable of
         ◦ Distributed Denial-of-Service (DDoS) surges
     3. Visualize access patterns to highlight abnormal spikes and malicious IP behavior.
     4. Export incident reports summarizing suspicious events for SOC review.
-```
-```
-3. Tools and Technologies
+
+### 3. Tools and Technologies
 Python
 Provides a flexible environment for text processing, data analysis, and automation.
 Pandas
@@ -34,9 +30,7 @@ Enables data cleaning, transformation, filtering, grouping, and anomaly detectio
 Matplotlib
 Used to visualize trends such as hourly spikes, failed auth attempts, and IP distribution.
 
-```
-```
-4. Methodology
+### 4. Methodology
 4.1 Log Parsing
 The tool begins by ingesting raw log files from Apache (access.log) and SSH (auth.log).
 Regex patterns are used to extract structured fields:
@@ -80,22 +74,19 @@ For each detected event, the tool exports:
     • Risk classification
     • Recommended mitigation
 The report is saved in CSV/JSON/PDF format (as needed).
-```
-```
-5. Results and Findings
+
+### 5. Results and Findings
 During testing with mixed log datasets:
     • Multiple brute-force attempts from repeated IPs were successfully detected.
     • High-frequency request bursts were correctly marked as potential DoS activity.
     • Visualization clearly displayed abnormal spikes compared to baseline traffic.
     • Cross-referencing revealed several IPs already listed in global blacklists.
 The project demonstrates that automated log analysis significantly improves detection efficiency and reduces manual review workload.
-```
-```
-Conclusion
+
+### Conclusion
 The Log File Analyzer for Intrusion Detection effectively identifies various suspicious patterns using a combination of Python, regex, Pandas, and Matplotlib.
 Future improvements may include:
     • Real-time monitoring with WebSockets/Flask
     • Machine learning for behavioral anomaly detection
     • Streamlit dashboard with threat heatmaps
 This project serves as a foundational intrusion detection tool and can be expanded into a full SIEM-like component.
-```
