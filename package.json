@@ -10,8 +10,7 @@
         "lint": "eslint .",
         "preview": "vite preview",
         "typecheck": "tsc --noEmit -p tsconfig.app.json",
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
+        "build-docs": "vite build"
     },
     "dependencies": {
         "@react-three/drei": "^9.105.6",
