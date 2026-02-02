@@ -4,7 +4,7 @@ import DashboardPage from './pages/DashboardPage';
 
 function App() {
     return (
-        <Router>
+        <Router basename="/Log-analyzer/">
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/dashboard" element={<DashboardPage />} />
